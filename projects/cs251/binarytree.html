@@ -1,14 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1561.61">
-  <style type="text/css">
+  <style>
+    .container-fluid {
+      height: 100%;
+    }
+    body {
+      background-image: linear-gradient(to right, #0099F7, #F11712);
+      color: #ffffff;
+    }
+   .bg-1 {
+     color: #ffffff;
+   }
+    a:link {
+      color: red;
+    }
+    a:visited {
+      color: lightblue;
+    }
+    a:hover {
+      color: hotpink;
+    }
+    a:active {
+      color: cyan;
+    }
   </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+  <div class="container-fluid bg-1 text-center">
+    <h1>Binary Tree Implementation</h1>
+    <li><a href="bst/bst.h">Binary Search Tree main file</a></li>
+    <li><a href="bst/Readme.txt">Questionnaire on requirements</a></li>
+  </div>
+  <div class="container-fluid bg-1 text-left">
+    <h3>Requirements Summary</h3>
+    <p> For this program, we were required to implement a binary search tree which had the requirements as follows:</p>
+    <ul>
+      <li>Maintain an asymptotic runtime for insertions</li>
+      <li>Maintain an O(H) runtime for the functions where H is the height of the BST</li>
+      <li>Write a function to place all values of the BST in a vector</li>
+      <li>Write a function get_ith which returns the value at the specified place</li>
+      <li>Write a function which returned the values greater than or equal to the parameter</li>
+      <li>Write a function which returned the values that are less than or equal to the parameter</li>
+      <li>Write a function which returned the values betweeen a specified range</li>
+      <li>Assure the height of the binary search tree was log<sub>2</sub>(N) where N is the total number of nodes</li>
+    </ul>
+  </div>
+  <div class="container-fluid bg-1 text-left">
+    <h3>Solution</h3>
+    <p>In order to implement the following requirements, my solutions were as follows:</p>
+    <ul>
+      <li>In order to keep the runtime asymptotic when rebalancing the BST, I made sure to only rebalance it when <br> one of the subtrees did not meet the
+           required height because it was a costly function in terms of runtime</li>
+      <li>In order to keep a O(H) runtime on the functions that were written, an integer variable was added to the node <br> data structure which
+          kept track of the number of children belonging to each node. This change helped to <br> avoid traversing every individual node when trying to count nodes based on a requirement. </li>
+      <li>Created a vector with BST values by recursively went through all nodes and children of nodes, then added <br> them to vector upon return</li>
+      <li>Able to retrieve the value at the specified position this by using the property of BSTs where all nodes are in <br> order and the leftmost <br> one is the smallest value, from there
+          I used a counter to traverse through</li>
+      <li>Able to retrieve values greater than or equal to the parameter by traversing the BST recursively until the value <br> is found, or a value greater than the specified value is found, <br> then
+          use the counter value in the node's data structure to return the total number of values that are greater <br> than or equal to the parameter</li>
+      <li>Same approach as the point above, only with values less than or equal to the parameter</li>
+      <li>Same approact as the greater than or equal to function, only with a range specified by the parameters</li>
+      <li>Used a rebalancing function to check if there is an imbalance of the number of children in the parent everytime <br> a new node is deleted or added     to the BST</li>
+    </ul>
+  </div>
 </body>
 </html>
