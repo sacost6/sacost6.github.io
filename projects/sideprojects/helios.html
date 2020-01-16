@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <style>
+      .container-big-texts {
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+    body {
+      background-image: linear-gradient(to right, #0099F7, #F11712);
+      color: #ffffff;
+    }
+    .bg-1 {
+      color: #ffffff;
+    }
+    a:link {
+      color: hotpink;
+    }
+    a:visited {
+      color: lightblue;
+    }
+    a:hover {
+      color: hotpink;
+    }
+    a:active {
+      color: cyan;
+    }
+    </style>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          </head>
+  
+  <body>
+    <div class="container-fluid bg-1 text-center">
+      <h1>Helios</h1>
+      <li><a href="https://play.google.com/store/apps/details?id=pothole.detector.application">Play Store Link</a></li>
+    </div>
+    <div class="container-big-texts bg-1 text-center">
+      <h3>Project Background</h3>
+      <p>This project was originally created on an <a href="../cs362/potholedetector.html">Arduino board for a Computer Design class</a>. This Android application was written by myself and the same partner from the semester project of my Computer Design class. Following the first semester in which we both learned Java, my partner and I decided to use the language in order to teach ourselves to write an Android app using Android Studios. The final outcome was a fully functional Android-implementation of our Pothole Detector.</p>
+      <h3>Project Summary</h3>
+      <p> In this project, we build use Android's built-in accelerometer and Google's Location Services in order to build a fully functioning pothole detector that is capable of storing pothole locations and warning users when approaching a pothole that was previoulsy detected and registered. This application uses Android's built-in SQLite implementation in order to store the pothole location as floating-point coordinates consisting of latitude and longitude. Google Maps API functions are then used to detect the distance between the user and registered potholes in order to warn users when they are nearing one. </p>
+      <div class="container-fluid bg-1 text-left">
+        <p> <br> </p>
+        <img src="source/helios.png" alt="Helios now on Android Market" width="540" height="435" align="right">
+        <h3>Topics Learned Upon Completion</h3>
+        <ul>
+          <li>Android Studio</li>
+          <li>Basic Android Dev. Topics (Activities, Fragments, etc)</li>
+          <li>Google API for Android</li>
+          <li>Experience with XML files, Gradle files, Android Manifest files</li>
+          <li>Android UI Development</li>
+          <li>SQLite on Android</li>
+        </ul>
+      </div>
+</html>
