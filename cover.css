@@ -46,6 +46,13 @@ body {
   max-width: 42em;
 }
 
+.title {
+  margin-top: 5em;
+}
+
+.card-custom {
+  margin-bottom: 5em;
+}
 
 /*
  * Header
