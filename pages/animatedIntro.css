@@ -69,7 +69,7 @@ a:hover {
  * Footer
  */
 .mastfoot {
-    color: #000000;
+    color: rgba(255, 255, 255, .5);
 }
 
 
@@ -112,7 +112,7 @@ a:hover {
 }
 
 .container_content_inner {
-    width: 80%;
+    width: auto;
     margin-left: 80px;
 }
 
@@ -129,6 +129,10 @@ a:hover {
 
 .cover-container {
     max-width: 42em;
+}
+
+.cover-container-custom {
+    width: 90%;
 }
 
 .par {
