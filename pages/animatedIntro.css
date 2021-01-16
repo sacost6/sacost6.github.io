@@ -97,6 +97,7 @@ a:hover {
 .container {
     display: flex;
     height: auto;
+    width: auto;
     justify-content: space-around;
     align-items: center;
     color: #686464;
@@ -107,12 +108,39 @@ a:hover {
     transition: all .8s ease;
 }
 
+
 .container_content {
     width: 50%;
 }
 
-.container_content_inner {
+.container_content-custom {
     width: auto;
+    align-content: center;
+}
+
+.container_content-custom {
+    width: auto;
+    height: 100%;
+    align-content: center;
+}
+
+.container_content_inner-custom {
+    width: auto;
+    margin-left: 80px;
+}
+
+.container_content_inner-custom1 {
+    width: auto;
+    align-content: center;
+}
+
+.row {
+    height: 100px;
+    width: auto;
+}
+
+.container_content_inner {
+    width: 80%;
     margin-left: 80px;
 }
 
@@ -122,8 +150,21 @@ a:hover {
     overflow: hidden;
 }
 
+.container_outer_img-custom {
+    margin: 50px;
+    width: 50%;
+    overflow: hidden;
+    align-content: center;
+}
+
 .container_img {
     width: 100%;
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.container_img-custom {
+    width: 70%;
+    height: 70%;
     animation: slideIn 1.5s ease-in-out forwards;
 }
 
@@ -133,6 +174,13 @@ a:hover {
 
 .cover-container-custom {
     width: 90%;
+}
+
+.par-custom {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    text-indent: 2em;
 }
 
 .par {
