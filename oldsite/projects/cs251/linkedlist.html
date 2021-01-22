@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <style>
+      .container-fluid {
+        height: 100%;
+      }
+    .container-nav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    nav {
+      background-image: linear-gradient(to right, #C6FFDD, #FBD786, #F7797D);
+    }
+    body {
+      background-image: linear-gradient(to right, #0099F7, #F11712);
+      color: #ffffff;
+    }
+    .bg-1 {
+      color: #ffffff;
+    }
+    a:link {
+      color: hotpink;
+    }
+    a:visited {
+      color: lightblue;
+    }
+    a:hover {
+      color: hotpink;
+    }
+    a:active {
+      color: cyan;
+    }
+    </style>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-nav">
+      
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><font color:"white">Simon Acosta's Page</font></a>
+      </div>
+      
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../classes/summary.html">Classes  </a></li>
+          <li><a href="../about.html">About Me </a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://github.com/sacost6">GitHub</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  
+  <body>
+    <div class="container-fluid bg-1 text-center">
+      <h1>Linked List Implementation</h1>
+      <li><a href="source/List.h">Linked List main file</a></li>
+      <li><a href="source/Demo.cpp">Driver in C++ for Linked List</a></li>
+    </div>
+    <div class="container-fluid bg-1 text-left">
+      <h3>Some Requirements</h3>
+      <p> For this program, we were required to implement a linked list class  which had some requirements as follows:</p>
+      <ul>
+        <li>Write a function which returns the length of the calling list in O(1) time</li>
+        <li>Write a function that constructs a new list of the same length as the calling object with the value stored at <br> position i of the new list is the MAXIMUM value in the suffix (or tail) of the calling list starting from position i in O(n) time</li>
+        <li>Write a function that removes all elements of the calling list which are less than or equal to parameter value in THETA(n) time</li>
+        <li>Write a function that concatenates the calling list and parameter list without copying parameter list in O(1) time</li>
+      </ul>
+    </div>
+    <div class="container-fluid bg-1 text-left">
+      <h3>Solutions</h3>
+      <p>This project was written as a header for a singly Linked List. In order to implement the following requirements, my solutions were as follows:</p>
+      <ul>
+        <li>Within the Linked List class, an integer value was required to keep track of the size. This value was incremented <br> or decreased depending on whether something was added or deleted into the list. A getter function was used to <br> return the size of the calling list.</li>
+        <li>Using a reverse helper function, I obtain a new list that is the reverse list of the calling list. Then, I keep track of the <br>  smallest number encountered beginning at the end of the calling list going backwards. I fill a new list with the smallest <br> number encountered and return this. </li>
+        <li>Able to delete all matching values in the calling list by simply traversing the calling list starting at the head and deleting <br> all values matching the parameter. Was not able to create new nodes for this but simply relinking exisiting nodes.</li>
+        <li>Able to concatenate two existing lists by simply re-linking the end of the calling node and the head of parameter list.</li>
+      </ul>
+    </div>
+  </body>
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Return to the main page <a href="../index.html">here</a>.</p>
+      <p>Website created using <a href="https://getbootstrap.com/" style="color: #0a53be">Bootstrap</a>, by <a href="https://github.com/sacost6/" style="color: #0a53be">@sacost6</a>.</p>
+    </div>
+  </footer>
+</html>
+

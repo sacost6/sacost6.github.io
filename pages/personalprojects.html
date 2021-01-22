@@ -1,10 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="animatedIntro.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <title>Personal Projects</title>
 </head>
-<body>
+<body style="background-color: #686464">
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <header class="masthead mb-auto">
+                <div class="inner">
+                    <h3 class="masthead-brand" style="color: #cdcbcb" >Simon Acosta</h3>
+                    <nav class="nav nav-masthead justify-content-center">
+                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="./aboutme.html">About Me</a>
+                        <li class="nav-item-custom dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./projects.html">School Projects</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item active" href="#">Personal Projects</a>
+                            </div>
+                        </li>
+                        <a class="nav-link" href="classes.html">Courses</a>
+                        <a class="nav-link" href="../contact.html">Contact Me</a>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </header>
+</div>
+<div class= 'container'>
+    <div class="cover-container-custom d-flex h-100 p-3 mx-auto flex-column">
+        <div class="title">
+            <h1>Personal Projects</h1>
+        </div>
+        <div class="par">
+            <p>
+                Here I will describe the projects I have created on my own time, for fun.  Each listing will describe the project, the issues presented,
+                and may include the source code for the project. (Projects released on app store will not have source code, for safety concerns)
+            </p>
+        </div>
+        <div class="card bg-dark">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Helios: Pothole Detector <br>(Android Application)
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>An adaption from a course project from a Computer Design class which was taken my junior year.</li>
+                        <li>This project is written in Java and required self-teaching the Android Studios software, as it was
+                            created before taking a Mobile App Development class.</li>
+                        <li>Currently a scrapped idea which helped build my next mobile application project and
+                            gave me experience with deploying applications to the Google Play Store.</li>
+                        <li><a href="https://play.google.com/store/apps/details?id=pothole.detector.application">Play Store Link</a></li>
+                    </ul>
+                    <u>Topics Learned Upon Completion</u>
+                    <ul>
+                        <li>Android Studio</li>
+                        <li>Basic Android Dev. Topics (Activities, Fragments, etc)</li>
+                        <li>Google API for Android</li>
+                        <li>Experience with XML files, Gradle files, Android Manifest files</li>
+                        <li>Android UI Development</li>
+                        <li>SQLite on Android</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        This Website!
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>This website was started December 2019, which went through an overhaul a year later on December 2020.</li>
+                        <li>First project (side project and school project) in which I create a website from scratch, used to self-teach CSS and HTML for front end.</li>
+                        <li>Used to track progress within my CS career.</li>
+                        <li><a href="https://github.com/sacost6/sacost6.github.io">Source Code for Current Version</a></li>
+                        <li><a href="../oldsite/old-index.html">Click here to view version before overhaul.</a>
+                            <br> (Note: some links may be broken as site was unfinished,
+                            <br> however a link to current version's main page at the bottom of every page.)</li>
+                    </ul>
+                    <u>Topics Learned Upon Completion</u>
+                    <ul>
+                        <li>Basic HTML and CSS knowledge</li>
+                        <li>Boostrap Framework</li>
+                        <li>Basic knowledge regarding mixing HTML and Javascript to create live websites.</li>
+                        <li>Basic knowledge on creating websites tailored for mobile and web users.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        SuperTag
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>Simple game made to understand the basics of Javascript and the libraries available.</li>
+                        <li>This project was written using Node.JS and Phaser.</li>
+                        <li>The game is very basic, each client is represented as a ball on the screen, belonging to the team of its color.
+                            <br> The way to win is to collect the most items that drop on the screen. </li>
+                        <li><a href="https://github.com/sacost6/SuperTag">Source Code</a></li>
+                        <u>Topics Learned Upon Completion</u>
+                        <ul>
+                            <li>Basic Javascript knowledge</li>
+                            <li>Familiarity with Phaser library used for game physics.</li>
+                            <li>Introduction to NodeJS and its applications outside of web development.</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-dark">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        U-Pick
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>Mobile application written in Javascript using the React-Native framework.</li>
+                        <li>Uses a server written in NodeJS being run on DigitalOcean.</li>
+                        <li>This application allows users to choose a restaurant when indecisive about what to eat.</li>
+                        <li>Available for both iOS and Android phones, as well as being cross-compatible.</li>
+                        <li>Current on the Google Play Store, however the iOS version is currently in beta testing.</li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.demboiz.upick&hl=en_US&gl=US">Link for Android Version.</a> </li>
+                        <u>Topics Learned Upon Completion</u>
+                        <ul>
+                            <li>Increased knowledge about Javascript, including using promises and async tasks.</li>
+                            <li>Familiarity with React-Native framework and basic front-end development.</li>
+                            <li>Experience writing back-end code using NodeJS.</li>
+                            <li>Basic familiarity using JSON objects.</li>
+                            <li>Building projects using Expo.</li>
+                            <li>Deploying applications to the Apple App Store.</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <footer class="mastfoot mt-auto" >
+        <div class="inner" style="align-content: center">
+            <p>Website created using <a href="https://getbootstrap.com/" style="color: #083f91">Bootstrap</a>,
+                by <a href="https://github.com/sacost6/" style="color: #083f91">@sacost6</a>.</p>
+        </div>
+    </footer>
+</div>
+</div>
 
+<div class="overlay"></div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
+

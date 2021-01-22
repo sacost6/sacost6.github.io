@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <style>
+      .container-big-texts {
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+    body {
+      background-image: linear-gradient(to right, #0099F7, #F11712);
+      color: #ffffff;
+    }
+    .bg-1 {
+      color: #ffffff;
+    }
+    a:link {
+      color: hotpink;
+    }
+    a:visited {
+      color: lightblue;
+    }
+    a:hover {
+      color: hotpink;
+    }
+    a:active {
+      color: cyan;
+    }
+    </style>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          </head>
+  
+  <body>
+    <div class="container-fluid bg-1 text-center">
+      <h1>Concurrent Elevator Controller</h1>
+      <li><a href="source/elevatorcontroller.zip">Compressed Source Files</a></li>
+    </div>
+    <div class="container-big-texts bg-1 text-center">
+      <h3>Project Background</h3>
+      <p> A M story highrise has N elevators in a single “elevator bank”, each able to serve every floor of the building. Contrary from most elevator designs, there are no buttons to choose a destination floor inside the elevator. Instead, the elevator lobby at each floor has M individual “destination floor” buttons, and passengers choose their destination by pushing the appropriate button. Once a button is pushed, a display near the buttons tells the passenger which elevator door to wait by. In this assignment, elevators serve only one passenger at a time. </p>
+      <h3>Project Summary</h3>
+      <p>In this project the goal is to create an elevator controller that ensures that all passengers receive service, minimizing the amount of time it takes to serve all of the passengers, and how much CPU time is used to run the controller. The template code works correctly, but is terribly slow. In part, this is because passengers often “miss” the elevator (don’t get in in time), or miss their floor (stay on the elevator). In part, it is because the elevator stops at every floor, and we only use one elevator.</p>
+      <div class="container-fluid bg-1 text-left">
+        <h3>Requirements:</h3>
+        <ul>
+          <li>Achieve multiple elevators using threads.</li>
+          <li>Minimize CPU time of program.</li>
+        </ul>
+      </div>
+      <div class="container-fluid bg-1 text-left">
+        <h3>Topics Learned Upon Completion</h3>
+        <ul>
+          <li>Event-based concurrency in C</li>
+          <li>Using pthread_barriers and pthread_mutex locks for performance enhancement</li>
+          <li>Using pthread_cond condition variables for performance enhancment</li>
+          <li>Real-world applications in embedded systems</li>
+        </ul>
+      </div>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Return to the main page <a href="../index.html">here</a>.</p>
+          <p>Website created using <a href="https://getbootstrap.com/" style="color: #0a53be">Bootstrap</a>, by <a href="https://github.com/sacost6/" style="color: #0a53be">@sacost6</a>.</p>
+        </div>
+      </footer>
+      </body>
+</html>
